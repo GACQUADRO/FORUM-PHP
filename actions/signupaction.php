@@ -11,7 +11,7 @@ if(isset($_POST["validate"])){
         $user_pseudo = htmlspecialchars($_POST["pseudo"]);
         $user_lastname = htmlspecialchars($_POST["lastname"]);
         $user_firstname = htmlspecialchars($_POST["firstname"]);
-        $user_passwd = password_hash($_POST["passwd"], PASSWORD_DEFAULT);
+        $user_passwd = password_hash($_POST["passwd"], PASSWORD_BCRYPT);
 
         //Check if user exists
         $checkIfUserAlreadyExists = $bdd->prepare("SELECT pseudo FROM users WHERE pseudo = ?");
