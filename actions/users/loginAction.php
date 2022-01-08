@@ -7,7 +7,9 @@ if(isset($_POST["validate"])){
 
         //user data
         $user_pseudo = htmlspecialchars($_POST["pseudo"]);
-        $user_passwd = htmlspecialchars($_POST["passwd"], PASSWORD_BCRYPT);
+        $user_passwd = htmlspecialchars($_POST["passwd"],intval(PASSWORD_BCRYPT));
+        // intval(PASSWORD_BCRYPT) cast en int car sans prens un string et mais une erreur qui dit qu'il veut un int
+        // par contre jsp si le bcrypt fonctionne correctement
 
      
         $checkIfUserAlreadyExists = $bdd->prepare("SELECT pseudo FROM users WHERE pseudo = ?");

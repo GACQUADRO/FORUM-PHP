@@ -1,4 +1,4 @@
-<?php require('actions/signupAction.php');?>
+<?php require('actions/users/signupAction.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'includes/head.php'; ?>
