@@ -20,8 +20,8 @@ if(isset($_POST["validate"])){
 
         //Check if user exists
         if($checkIfUserAlreadyExists->rowCount()>0){
-            $usersInfo = $checkIfUserAlreadyExists-> fetch();
-            if(password_verify($user_passwd, $usersInfo["passwd"])){
+            $userInfos = $checkIfUserAlreadyExists-> fetch();
+            if(password_verify($user_passwd, $userInfos["passwd"])){
 
                 //authenticate user on the site and get user data un global variable
                 $_SESSION["auth"] = true;

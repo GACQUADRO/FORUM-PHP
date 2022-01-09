@@ -1,6 +1,9 @@
 <?php 
     require('actions/questions/publishQuestionAction.php');
     require('actions/users/securityAction.php'); 
+  
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
