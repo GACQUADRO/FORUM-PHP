@@ -1,10 +1,12 @@
-<?php require('actions/questions/myQuestionsAction.php');
-require('actions/users/securityAction.php'); ?>
+<?php require('actions/users/securityAction.php');
+require('actions/questions/myQuestionsAction.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include "includes/head.php"; ?>
 
 <body>
+
 
     <?php include "includes/navbar.php"; ?>
     <br><br>
@@ -19,7 +21,7 @@ require('actions/users/securityAction.php'); ?>
 
                     <p class="card-text"><?= $question['description'] ?> </p>
                     <a href="#" class="btn btn-warning">Accéder à l'article</a>
-                    <a href="#" class="btn btn-warning">Modifier l'article</a>
+                    <a href="edit-question.php?id=<?= $question['id'] ?>" class="btn btn-warning">Modifier l'article</a>
                 </div>
             </div>
             <br>
