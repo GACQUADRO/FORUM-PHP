@@ -7,17 +7,21 @@ if(!isset($_SESSION['auth'])) {
 
 require('../database.php');
 
+//Verifier si l'id est rentre en parametre dans l'url
 if(isset($_GET['id']) AND !empty($_GET['id'])) {
     $idOfTheQuestion = $_GET['id'];
+    //verif si la  question existe
     $checkIfQuestionExists = $bdd->prepare('SELECT * FROM questions WHERE id = ?');
     $checkIfQuestionExists->execute(array($idOfTheQuestion));
 
     if($checkIfQuestionExists->rowCount() > 0) {
+        //recup les infos de la question
         $usersInfos = $checkIfQuestionExists->fetch();
         if($usersInfos['id_auteur'] == $_SESSION['id']) {
+            //supp la question si c user = auteur de la question
             $deleteThisQuestion = $bdd->prepare('DELETE FROM questions WHERE id = ?');
             $deleteThisQuestion->execute(array($idOfTheQuestion));
-
+            //redirection
             header('Location: ../../my-questions.php');
 
         } else {
