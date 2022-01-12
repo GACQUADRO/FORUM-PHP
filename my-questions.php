@@ -20,7 +20,7 @@ require('actions/questions/myQuestionsAction.php');
                 <div class="card-body">
 
                     <p class="card-text"><?= $question['description'] ?> </p>
-                    <a href="#" class="btn btn-primary">Accéder à l'article</a>
+                    <a href="article.php?id=<?= $question['id'];?>" class="btn btn-primary">Accéder à l'article</a>
                     <a href="edit-question.php?id=<?= $question['id'] ?>" class="btn btn-warning">Modifier l'article</a>
                     <a href="actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>" class="btn btn-danger">Supprimer l'article</a>
                 </div>
