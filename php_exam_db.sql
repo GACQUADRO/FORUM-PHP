@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 08 jan. 2022 à 18:51
+-- Généré le : mer. 12 jan. 2022 à 16:20
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 8.1.1
 
@@ -24,6 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `answers`
+--
+
+CREATE TABLE `answers` (
+  `id` int(11) NOT NULL,
+  `id_auteur` int(11) NOT NULL,
+  `pseudo_auteur` varchar(255) NOT NULL,
+  `id_question` int(11) NOT NULL,
+  `contenu` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `answers`
+--
+
+INSERT INTO `answers` (`id`, `id_auteur`, `pseudo_auteur`, `id_question`, `contenu`) VALUES
+(1, 7, 'a', 18, 'hello'),
+(2, 7, 'a', 12, 'lourd'),
+(5, 7, 'a', 12, 'en plus t trop bo'),
+(6, 1, 'Doof3', 12, 'de fou'),
+(7, 1, 'Doof3', 15, 'bbbbbbbbbbb'),
+(8, 1, 'Doof3', 15, 'trop drole ce mec');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `questions`
 --
 
@@ -36,6 +62,15 @@ CREATE TABLE `questions` (
   `pseudo_auteur` varchar(255) NOT NULL,
   `date_publication` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `questions`
+--
+
+INSERT INTO `questions` (`id`, `titre`, `description`, `contenu`, `id_auteur`, `pseudo_auteur`, `date_publication`) VALUES
+(12, 'a', 'aa', 'aaa', 7, 'a', '12/01/2022'),
+(15, 'test', 'test test ', 'test 1234<br />\r\naaaaaaa', 7, 'a', '12/01/2022'),
+(18, 'test', 'test', 'test', 1, 'Doof3', '12/01/2022');
 
 -- --------------------------------------------------------
 
@@ -64,6 +99,12 @@ INSERT INTO `users` (`id`, `pseudo`, `lastname`, `firstname`, `passwd`) VALUES
 --
 
 --
+-- Index pour la table `answers`
+--
+ALTER TABLE `answers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `questions`
 --
 ALTER TABLE `questions`
@@ -80,10 +121,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT pour la table `answers`
+--
+ALTER TABLE `answers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
 -- AUTO_INCREMENT pour la table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT pour la table `users`
