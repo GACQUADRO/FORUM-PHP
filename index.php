@@ -38,7 +38,7 @@ require('actions/questions/showAllQuestionsAction.php');
                 </div>
 
                 <div class="card-footer">
-                    Publié par <?= $question['pseudo_auteur']; ?> le <?= $question['date_publication']; ?>
+                Publié par <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
                 </div>
             </div>
             <br>
