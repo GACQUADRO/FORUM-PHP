@@ -13,17 +13,15 @@ if(isset($_GET['id']) && !empty($_GET["id"])){
     if($checkIfQuestionExists->rowCount()>0){
         $questionInfos = $checkIfQuestionExists->fetch();
         //chech if user can update this post
-        if($questionInfos['id_auteur'] == $_SESSION['id']){
+        if($questionInfos['id_auteur'] == $_SESSION['id'] || $_SESSION['pseudo'] == "admin"){
 
             $question_title = $questionInfos['titre'];
             $question_description = $questionInfos['description'];
             $question_content = $questionInfos['contenu'];
 
-
-            //Pertinrent?? je sais pas.. je dois encore y réfléchier...... 
             $question_description =str_replace("<br />","",$question_description,);
-            $question_description =str_replace("<br />","",$question_content,);
-            $question_description =str_replace("<br />","",$question_title,);
+            $question_content =str_replace("<br />","",$question_content,);
+            $question_title =str_replace("<br />","",$question_title,);
             
         } else {
             $errorMsg = "Vous n'avez pas le droit de modifier ce poste.";

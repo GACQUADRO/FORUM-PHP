@@ -28,10 +28,6 @@
             <input type="text" class="form-control" name="title">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Description de la question</label>
-            <textarea class="form-control" name="description"></textarea>
-        </div>
-        <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Contenu de la question</label>
             <textarea type="text" class="form-control" name="content"></textarea>
         </div>

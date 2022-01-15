@@ -17,10 +17,11 @@ if(isset($_GET['id']) AND !empty($_GET['id'])) {
     if($checkIfQuestionExists->rowCount() > 0) {
         //recup les infos de la question
         $questionsInfos = $checkIfQuestionExists->fetch();
-        if($questionsInfos['id_auteur'] == $_SESSION['id']) {
+        if($questionsInfos['id_auteur'] == $_SESSION['id'] || $_SESSION['pseudo'] == 'admin' ) {
             //supp la question si c user = auteur de la question
             $deleteThisQuestion = $bdd->prepare('DELETE FROM questions WHERE id = ?');
             $deleteThisQuestion->execute(array($idOfTheQuestion));
+            
             //redirection
             header('Location: ../../my-questions.php');
 
