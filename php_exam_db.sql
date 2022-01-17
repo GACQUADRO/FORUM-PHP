@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 12 jan. 2022 à 16:20
+-- Généré le : lun. 17 jan. 2022 à 13:04
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 8.1.1
 
@@ -35,18 +35,6 @@ CREATE TABLE `answers` (
   `contenu` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `answers`
---
-
-INSERT INTO `answers` (`id`, `id_auteur`, `pseudo_auteur`, `id_question`, `contenu`) VALUES
-(1, 7, 'a', 18, 'hello'),
-(2, 7, 'a', 12, 'lourd'),
-(5, 7, 'a', 12, 'en plus t trop bo'),
-(6, 1, 'Doof3', 12, 'de fou'),
-(7, 1, 'Doof3', 15, 'bbbbbbbbbbb'),
-(8, 1, 'Doof3', 15, 'trop drole ce mec');
-
 -- --------------------------------------------------------
 
 --
@@ -63,15 +51,6 @@ CREATE TABLE `questions` (
   `date_publication` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `questions`
---
-
-INSERT INTO `questions` (`id`, `titre`, `description`, `contenu`, `id_auteur`, `pseudo_auteur`, `date_publication`) VALUES
-(12, 'a', 'aa', 'aaa', 7, 'a', '12/01/2022'),
-(15, 'test', 'test test ', 'test 1234<br />\r\naaaaaaa', 7, 'a', '12/01/2022'),
-(18, 'test', 'test', 'test', 1, 'Doof3', '12/01/2022');
-
 -- --------------------------------------------------------
 
 --
@@ -83,16 +62,16 @@ CREATE TABLE `users` (
   `pseudo` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
   `firstname` varchar(255) NOT NULL,
-  `passwd` text NOT NULL
+  `passwd` text NOT NULL,
+  `mail` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `pseudo`, `lastname`, `firstname`, `passwd`) VALUES
-(1, 'Doof3', 'ACQUADRO', 'Grégoire', '$2y$10$aR15dUvl6XgwJf/2fqb5cOe1eIgf.PxOpBNve8BgnZdYirIVinbn.'),
-(7, 'a', 'a', 'a', '$2y$10$BeLPIusUD.W1InSQCnwPIeTNoo13.gHflTvCX4RhEikEF6Osjk0tq');
+INSERT INTO `users` (`id`, `pseudo`, `lastname`, `firstname`, `passwd`, `mail`) VALUES
+(8, 'Doof4', 'Acquadro', 'greg', '$2y$10$obkWISwulkflxGDGi2udVeIjju2mxnvkxySsMBAavsakin9Q0ymHC', 'test@mail.com');
 
 --
 -- Index pour les tables déchargées
@@ -130,13 +109,13 @@ ALTER TABLE `answers`
 -- AUTO_INCREMENT pour la table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

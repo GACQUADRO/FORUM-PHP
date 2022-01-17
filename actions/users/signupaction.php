@@ -5,21 +5,22 @@ require("actions/database.php");
 //Check for register
 if(isset($_POST["validate"])){
     //Chech if user complete the form
-    if(!empty($_POST["pseudo"]) && !empty($_POST["lastname"]) && !empty($_POST["firstname"]) && !empty($_POST["passwd"])){
+    if(!empty($_POST["pseudo"]) && !empty($_POST["lastname"]) && !empty($_POST["firstname"]) && !empty($_POST["passwd"]) and !empty($_POST["mail"])){
 
         //user data
         $user_pseudo = htmlspecialchars($_POST["pseudo"]);
         $user_lastname = htmlspecialchars($_POST["lastname"]);
         $user_firstname = htmlspecialchars($_POST["firstname"]);
         $user_passwd = password_hash($_POST["passwd"], PASSWORD_BCRYPT);
+        $user_mail = htmlspecialchars($_POST["mail"]);
 
         //Check if user exists
         $checkIfUserAlreadyExists = $bdd->prepare("SELECT pseudo FROM users WHERE pseudo = ?");
         $checkIfUserAlreadyExists-> execute(array($user_pseudo));
         if($checkIfUserAlreadyExists->rowCount() == 0){
             //add user in database
-            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, lastname, firstname, passwd) VALUES (?, ?, ?, ?)');
-            $insertUserOnWebsite->execute(array($user_pseudo,$user_lastname,$user_firstname,$user_passwd));
+            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, lastname, firstname, passwd, mail) VALUES (?, ?, ?, ?, ?)');
+            $insertUserOnWebsite->execute(array($user_pseudo,$user_lastname,$user_firstname,$user_passwd,$user_mail));
 
             //get user data
             $getInfosOfThidUserReq =$bdd->prepare('SELECT id, pseudo, lastname, firstname FROM users WHERE lastname = ? && firstname = ? && pseudo = ?');

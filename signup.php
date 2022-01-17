@@ -23,6 +23,10 @@
             <input type="text" class="form-control" name="firstname" >
         </div>
         <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mail</label>
+            <input type="text" class="form-control" name="mail" >
+        </div>
+        <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" name="passwd" >
         </div>

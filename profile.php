@@ -18,6 +18,7 @@ require('actions/users/showOneUsersProfileAction.php');
                     <h4>@<?= $user_pseudo; ?></h4>
                     <hr>
                     <p><?= $user_lastname . ' ' . $user_firstname; ?></p>
+                    <p><?= $user_mail; ?></p>
                 </div>
             </div>
             <br>
