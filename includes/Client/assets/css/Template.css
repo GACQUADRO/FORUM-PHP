@@ -1,0 +1,448 @@
+/* * {
+margin: 0;
+padding: 0;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+html {
+    overflow-x: hidden;
+}
+
+body,
+html {
+    /* background-image:url('https://cdn.wallpapersafari.com/83/61/3MbidN.gif'); background-repeat:repeat; */
+    background-size: cover;
+    background-color: #0B1117 !important;
+    /* background-position: fixed; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;
+    background-position: bottom; */
+}
+
+p,
+h1,
+a {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2B4157;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #683ee8, #5729E5);
+}
+
+div::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+div::-webkit-scrollbar-track {
+    background: #2B4157;
+}
+
+div::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #683ee8, #5729E5);
+}
+
+
+/* axentix layout config */
+
+.navbar {
+    background-color: transparent !important;
+    /* border-bottom: 2px solid white !important; */
+}
+
+.filter {
+    position: absolute;
+    width: 100%;
+    background-color: #683ee8 !important;
+}
+
+.grixfilter {
+    position: relative;
+}
+
+.sidenav {
+    background-color: #0B1117 !important;
+    border-right: 2px solid #15202B !important;
+    color: #8497B0 !important;
+}
+
+.sidenav-trigger {
+    background-color: #683ee8 !important;
+    color: #8497B0 !important;
+}
+
+.nbrco {
+    color: #683ee8 !important;
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+#publish {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-color: #15202B;
+    background-color: #2B4157;
+}
+
+#publish:hover {
+    width: 150%;
+    height: 120%;
+    transition: 0.5s;
+    background-color: #683ee8;
+    border: #5729E5;
+}
+
+.TrackedStuff {
+    color: #683ee8;
+    font-size: 0.85em;
+}
+
+.footer {
+    background-color: transparent !important;
+    z-index: 99 !important;
+}
+
+
+/* ////axentix layout config */
+
+#grixcontain {
+    margin-bottom: 0.3% !important;
+}
+
+#grix {
+    background-color: #15202B;
+    margin-right: 1vw !important;
+    margin-left: 1vw !important;
+    height: 100%;
+    text-align: center;
+    color: #8497B0;
+    /* border-radius: 12px; */
+    /* a changé ^ */
+}
+
+#grixactu {
+    background-color: #15202B;
+    margin-right: 1vw !important;
+    margin-left: 1vw !important;
+    margin-bottom: 10%;
+    height: 430px;
+    text-align: center;
+    color: #8497B0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#grixfilter {
+    background-color: transparent;
+    margin-right: 1vw !important;
+    margin-left: 1vw !important;
+    height: 100%;
+    text-align: center;
+    color: #8497B0;
+}
+
+#grixdelete {
+    margin-right: 1vw !important;
+    margin-left: 1vw !important;
+    height: 100%;
+    text-align: center;
+}
+
+#PostsContent {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 1.45em;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border-bottom: #15202B 1px solid;
+}
+
+.containe {
+    width: 100%;
+    text-align: center !important;
+}
+
+.PostsContainer {
+    display: flex;
+}
+
+.for {
+    text-align: left;
+}
+
+.for2 {
+    text-align: center;
+}
+
+.for3 {
+    text-align: right;
+}
+
+.for4 {
+    text-align: center;
+}
+
+#grixTop {
+    font-size: 1.55em;
+    background-color: #15202B !important;
+    height: 100%;
+    text-align: center;
+    color: #8497B0;
+    border-radius: 12px !important;
+    display: flex;
+}
+
+.titre1 {
+    margin: auto;
+}
+
+.titre2 {
+    margin: auto;
+}
+
+.titre3 {
+    margin: auto;
+}
+
+#grixforum {
+    background-color: #0A0F14;
+    height: 70vh;
+    border-bottom: 2px solid #15202B !important;
+    border-left: 2px solid #15202B !important;
+    border-right: 2px solid #15202B !important;
+    text-align: center;
+    color: #8497B0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#filter {
+    font-size: 1.25em;
+    width: 100%;
+    background-color: #15202B !important;
+    color: #8497B0;
+    outline: none;
+}
+
+#filter:hover {
+    background-color: #683ee8 !important;
+}
+
+@media screen and (max-width: 957px) {
+    #grixdelete {
+        display: block !important;
+    }
+    #grixdelete2 {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    #grixdelete {
+        display: none;
+    }
+    #grixdelete2 {
+        display: block;
+    }
+    html {
+        overflow-y: hidden;
+    }
+    .sidenav {
+        width: 250px !important;
+    }
+}
+
+
+/* body */
+
+.topnav {
+    overflow: hidden;
+}
+
+
+/* .topnav a {
+  float: left;
+  display: block;
+  color: #8497B0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+
+/* .topnav a.active {
+  background-color: #2196F3;
+  color: white;
+} */
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+#search {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #15202B !important;
+    color: #8497B0 !important;
+    outline: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #15202B !important;
+    color: #8497B0 !important;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+@media screen and (max-width: 957px) {
+    .topnav .search-container {
+        float: none;
+    }
+    html {
+        overflow-y: visible;
+    }
+    .chat {
+        display: none;
+    }
+    #grixactu {
+        margin-top: 10%;
+    }
+    #search {
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .topnav .search-container button {
+        border-radius: 0%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .topnav .search-container button:hover {
+        background-color: #683ee8 !important;
+    }
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 1px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #2B4157 !important;
+    }
+}
+
+.actu {
+    border: #273B4F 1px solid;
+    border-radius: 12px;
+    width: 80%;
+    margin-top: -15%;
+}
+
+.actu1 {
+    border-top: #273B4F 1px solid;
+}
+
+.actu2 {
+    border-top: #273B4F 1px solid;
+}
+
+.ami {
+    border: #273B4F 1px solid;
+    border-radius: 12px;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.ami1 {
+    border-bottom: #273B4F 1px solid;
+}
+
+.chat {
+    border: #273B4F 1px solid;
+    background-color: #15202B !important;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.chat2 {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top: transparent 1px solid;
+    border-right: transparent 1px solid !important;
+    border-left: transparent 1px solid !important;
+    border-bottom: #273B4F 1px solid;
+    background-color: #15202B !important;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.chatbox {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+    height: 5.5%;
+    width: 15%;
+}
+
+#example- {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: #273B4F 1px solid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #15202B !important;
+}
+
+p {
+    text-align: left;
+}
+
+.textbox {
+    border: #273B4F 1px solid;
+}
+
+#grixcontains {
+    height: 47.5px;
+}
+
+#amimage {
+    border-radius: 50%;
+}

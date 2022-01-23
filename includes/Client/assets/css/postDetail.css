@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+.topcon {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.sidenav {
+    background-color: #040F16 !important;
+    border-right: 2px solid #0B4F6C !important;
+    color: #8497b0 !important;
+  }
+
+.titre {
+    color: #ffffffe0;
+    font-size: 3.3rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.profilName {
+    margin-left: 0%;
+    margin-top: 4%;
+    font-size: smaller;
+    color: #ffffff61;
+}
+
+.post {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.INpost {
+    margin-top: 2%;
+    font-size: larger;
+    color: #ffffffe0;
+    width: 85%;
+    text-align: justify;
+    background: #0000004f;
+    padding: 8mm;
+    border-radius: 69px
+}
+
+.wow {
+    /* margin-top: 2%; */
+    font-size: larger;
+    color: #ffffffe0;
+    /* width: 85%; */
+    /* text-align: justify; */
+    background: #0000004f;
+    padding: 8mm;
+    border-radius: 69px;
+}
+
+p {
+    line-height: 2.1rem !important;
+    text-align: inherit !important;
+}
+
+.dates {
+    color: #ffffff61;
+    margin-top: 2%;
+    font-size: smaller;
+}
+
+.line {
+    width: 97%;
+    border-top: solid 0.1mm grey;
+    margin: auto;
+}
+
+.buttonSocial {
+    background: #ffffff00;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: -10%;
+}
+
+.buttonSocial2 {
+    background: #ffffff00;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: -14%;
+}
+
+.social {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+#social {
+    margin-left: 1%;
+}
+
+#grixactu {
+    margin-top: 38%;
+}
+
+#grixforum {
+    background: url(https://images.hdqwalls.com/wallpapers/music-pipes-abstract-4k-dm.jpg);
+    background-size: cover;
+}
+
+.media-body img {
+    width: 100000px;
+}
+
+#test,
+#test2 {
+    outline: none;
+}
+
+
+/* 
+    ; */
+
+
+/* #bg {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.459);
+} */
+
+
+/* 
+#grixforum {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+  }
+  
+  #grixforum::after {
+    content: "";
+    background: url(image.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  } */
+
+.BackgroundImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1515554;
+}
