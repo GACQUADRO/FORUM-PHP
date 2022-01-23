@@ -1,20 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
-.topcon {
-    margin-left: 10px;
-    margin-top: 10px;
-    display: flex;
-}
-
-.img {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
-.sidenav {
-    background-color: #040F16 !important;
-    border-right: 2px solid #0B4F6C !important;
-    color: #8497b0 !important;
-  }
 
 .titre {
     color: #ffffffe0;

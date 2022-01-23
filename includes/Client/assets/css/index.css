@@ -79,11 +79,11 @@ div::-webkit-scrollbar-thumb {
 .grixfilter {
   position: relative;
 }
-.sidenav {
-  background-color: #040F16 !important;
-  border-right: 2px solid #0B4F6C !important;
-  color: #8497b0 !important;
-}
+  .sidenav {
+    background-color: #040F16 !important;
+    border-right: 2px solid #0B4F6C !important;
+    color: #8497b0 !important;
+  }
 .sidenav-trigger {
   background-color: rgb(121, 75, 196) !important;
   color: #8497b0 !important;
