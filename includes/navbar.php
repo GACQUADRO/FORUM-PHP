@@ -68,8 +68,11 @@
         />
         <div class="LinkContent">
           <div class="linkVal">
-            <i class="fas fa-home"></i
-            ><a href="index.php" class="sidenav-link active">Accueil</a>
+            <i class="fas fa-home"></i>
+            <li method="POST" class="Connect2" id="Connect">
+            <a type="submit" href="login.php"> Se connecter </a>
+            </li>
+            <a href="index.php" class="sidenav-link active">Accueil</a>
           </div>
           <?php
           if (isset($_SESSION['auth'])) {
@@ -110,9 +113,6 @@
           <?php
           }
           ?>
-          <li method="POST" class="Connect2" id="Connect">
-            <a type="submit" href="login.php"> Se connecter </a>
-          </li>
         </div>
       </div>
       </div>
