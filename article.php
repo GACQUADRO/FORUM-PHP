@@ -874,7 +874,7 @@ p {
 }
 
 #grixforum {
-    background: url(https://images.hdqwalls.com/wallpapers/music-pipes-abstract-4k-dm.jpg);
+    background-color: #0B4F6C;
     background-size: cover;
 }
 
