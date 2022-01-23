@@ -72,16 +72,25 @@ p {
     border-top: solid 0.1mm grey;
     margin: auto;
 }
-
+.dislike {
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.like {
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+}
 .buttonSocial {
-    background: #ffffff00;
+    background: transparent;
     border: none;
     color: rgb(255, 255, 255);
     margin-left: -10%;
 }
 
 .buttonSocial2 {
-    background: #ffffff00;
+    background: transparent;
     border: none;
     color: rgb(255, 255, 255);
     margin-left: -14%;

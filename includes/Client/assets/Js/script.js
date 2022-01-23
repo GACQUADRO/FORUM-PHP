@@ -18,14 +18,14 @@ function loginacces(dis, disnot) {
     displays(dis);
 }
 
-function colorlike(id, id2) {
+function colorlike(id, id2, color) {
     var x = document.getElementById(id);
     var z = document.getElementById(id2);
-    if (x.style.color == "red") {
+    if (x.style.color == color) {
         x.style.color = "white";
         z.style.color = "white";
     } else {
-        x.style.color = "red";
+        x.style.color = color;
         z.style.color = "white";
     };
 }

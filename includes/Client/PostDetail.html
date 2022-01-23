@@ -228,7 +228,7 @@
 
                                         <div class="social">
                                             <div class="1" id="social">
-                                                <button class="buttonSocial" onclick="colorlike('test','test2')" id="test"> 
+                                                <button class="buttonSocial" onclick="colorlike('test','test2','red')" id="test"> 
                                                 <i class="fas fa-heart fa-lg"></i>
                                             </button>
                                                 <div class="counter">206</div>
@@ -236,7 +236,7 @@
 
                                             <!-- dislike -->
                                             <div class="2" id="social">
-                                                <button class="buttonSocial" onclick="colordislike('test2','test')" id="test2"> 
+                                                <button class="buttonSocial" onclick="colorlike('test2','test','purple')" id="test2"> 
                                                 <i class="fas fa-heart-broken fa-lg"></i>
                                             </button>
                                                 <div class="counter">206</div>
@@ -252,16 +252,6 @@
 
                                             <div class="4" id="social">
                                                 <div id="fb-root"></div>
-                                                <script>
-                                                    (function(d, s, id) {
-                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                        if (d.getElementById(id)) return;
-                                                        js = d.createElement(s);
-                                                        js.id = id;
-                                                        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                    }(document, 'script', 'facebook-jssdk'));
-                                                </script>
 
                                                 <!-- Your share button code -->
                                                 <div class="fb-share-button" data-href="https://www.twitch.tv/lunium" data-layout="button_count">
@@ -295,14 +285,14 @@
 
                                                             <ul class="list-inline d-sm-flex my-0">
                                                                 <li class="list-inline-item g-mr-20">
-                                                                    <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                                                    <button class="like" onclick="colorlike('test3','test4','green')" id="test3">
                                                                         <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i> 178
-                                                                    </a>
+                                                                    </button>
                                                                 </li>
                                                                 <li class="list-inline-item g-mr-20">
-                                                                    <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                                                    <button class="dislike" onclick="colorlike('test4','test3','black')" id="test4">
                                                                         <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i> 34
-                                                                    </a>
+                                                                    </button>
                                                                 </li>
                                                                 <li class="list-inline-item ml-auto">
                                                                     <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
