@@ -66,37 +66,6 @@ require('actions/questions/showAllQuestionsAction.php');
         </div>
         <div class="col-xs1" id="grixdelete"></div>
         <div class="col-xs2" id="grixdelete"></div>
-        <div class="col-xs4 col-md2" id="grixactu">
-          <h3>Actualités</h3>
-          <div class="actu" id="actu">
-            <h3>Topics du moment</h3>
-            <div class="actu1">
-              <a href="PostDetail.html">League Of Legends</a>
-              <p><span class="TrackedStuff">(420 Poste)</span></p>
-            </div>
-            <div class="actu2">
-              <a href="#">Réaliser un forum en PHP</a>
-              <p><span class="TrackedStuff">(69 Postes)</span></p>
-            </div>
-          </div>
-          <div class="ami">
-            <div class="ami1">
-              <p>
-                Ami 1 a crée un poste sur
-                <a href="#" class="TrackedStuff">Jeux Vidéos</a> il y a
-                <span class="TrackedStuff">2 seconde</span>
-              </p>
-            </div>
-            <div class="ami2">
-              <p>
-                Ami 2 a aimé votre poste
-                <a href="#" class="TrackedStuff"
-                  >Sur que pensez vous du design du site ?</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
 

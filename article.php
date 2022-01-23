@@ -109,28 +109,13 @@ require('actions/questions/showAllAnswersOfQuestionAction.php');
                                         }
                                         ?>
                                         <div class="social">
-                                            <div class="1" id="social">
-                                                <button class="buttonSocial" onclick="colorlike('test','test2','red')" id="test"> 
-                                                <i class="fas fa-heart fa-lg"></i>
-                                            </button>
-                                                <div class="counter">206</div>
-                                            </div>
+                                            
 
                                             <!-- dislike -->
-                                            <div class="2" id="social">
-                                                <button class="buttonSocial" onclick="colorlike('test2','test','purple')" id="test2"> 
-                                                <i class="fas fa-heart-broken fa-lg"></i>
-                                            </button>
-                                                <div class="counter">206</div>
-                                            </div>
+                                            
 
                                             <!-- comment -->
-                                            <div class="3" id="social">
-                                                <button class="buttonSocial2" id="test">
-                                                <i class="fas fa-comments fa-lg"></i>
-                                            </button>
-                                                <div class="counter"> 206</div>
-                                            </div>
+                                            
 
                                             <div class="4" id="social">
                                                 <div id="fb-root"></div>
@@ -170,27 +155,11 @@ require('actions/questions/showAllAnswersOfQuestionAction.php');
                                                                 <a class="h5 g-color-gray-dark-v1 mb-0" href="profile.php?id=<?= $answer['id_auteur']; ?>">
                                                                     <?= $answer['pseudo_auteur']; ?>
                                                                 </a>
-                                                                <span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
                                                             </div>
 
                                                             <p><?= $answer['contenu']; ?></p>
 
                                                             <ul class="list-inline d-sm-flex my-0">
-                                                                <li class="list-inline-item g-mr-20">
-                                                                    <button class="like" onclick="colorlike('test3','test4','green')" id="test3">
-                                                                        <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i> 178
-                                                                    </button>
-                                                                </li>
-                                                                <li class="list-inline-item g-mr-20">
-                                                                    <button class="dislike" onclick="colorlike('test4','test3','black')" id="test4">
-                                                                        <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i> 34
-                                                                    </button>
-                                                                </li>
-                                                                <li class="list-inline-item ml-auto">
-                                                                    <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                                        <i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i> Reply
-                                                                    </a>
-                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -218,28 +187,6 @@ require('actions/questions/showAllAnswersOfQuestionAction.php');
             </div>
             <div class="col-xs1" id="grixdelete"></div>
             <div class="col-xs2" id="grixdelete"></div>
-            <div class="col-xs4 col-md2" id="grixactu">
-                <h3>Actualités</h3>
-                <div class="actu" id="actu">
-                    <h3>Topics du moment</h3>
-                    <div class="actu1">
-                        <a href="#">League Of Legends</a>
-                        <p><span class="TrackedStuff">(420 Poste)</span></p>
-                    </div>
-                    <div class="actu2">
-                        <a href="#">Réaliser un forum en PHP</a>
-                        <p><span class="TrackedStuff">(69 Postes)</span></p>
-                    </div>
-                </div>
-                <div class="ami">
-                    <div class="ami1">
-                        <p>Ami 1 a crée un poste sur <a href="#" class="TrackedStuff">Jeux Vidéos</a> il y a <span class="TrackedStuff">2 seconde</span></p>
-                    </div>
-                    <div class="ami2">
-                        <p>Ami 2 a aimé votre poste <a href="#" class="TrackedStuff">Sur que pensez vous du design du site ?</a></p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 

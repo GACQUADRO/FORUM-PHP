@@ -94,6 +94,7 @@ require('actions/users/showOneUsersProfileAction.php');
                                 </div>
                                 <div class="righto"></div>
                             </div>
+                            <p class="VosPosts">Vos Questions :</p>
                             <?php
                             while ($question = $getHisQuestion->fetch()) {
                             ?>
@@ -113,28 +114,6 @@ require('actions/users/showOneUsersProfileAction.php');
             </div>
             <div class="col-xs1" id="grixdelete"></div> 
             <div class="col-xs2" id="grixdelete"></div> 
-            <div class="col-xs4 col-md2" id="grixactu">
-                <h3>Actualités</h3>
-                <div class="actu" id="actu">
-                    <h3>Topics du moment</h3>
-                    <div class="actu1">
-                        <a href="#">League Of Legends</a>
-                        <p><span class="TrackedStuff">(420 Poste)</span></p>
-                    </div>
-                    <div class="actu2">
-                        <a href="#">Réaliser un forum en PHP</a>
-                        <p><span class="TrackedStuff">(69 Postes)</span></p>
-                    </div>
-                </div>
-                <div class="ami">
-                    <div class="ami1">
-                        <p>Ami 1 a crée un poste sur <a href="#" class="TrackedStuff">Jeux Vidéos</a> il y a <span class="TrackedStuff">2 seconde</span></p>
-                    </div>
-                    <div class="ami2">
-                        <p>Ami 2 a aimé votre poste <a href="#" class="TrackedStuff">Sur que pensez vous du design du site ?</a></p>
-                    </div>
-                </div>
-            </div>
         </div> 
 </main>
 
@@ -202,6 +181,10 @@ background: #2b4157;
 div::-webkit-scrollbar-thumb {
 background: linear-gradient(transparent, rgb(121, 75, 196), #5729e5);
 }
+.VosPosts {
+    margin-left:43%;
+}
+
 /* axentix layout config */
 .navbar {
 background-color: transparent !important;

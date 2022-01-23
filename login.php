@@ -20,6 +20,7 @@
         <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
         <br><br>
         <a href="signup.php"><p>Je n'ai pas de compte, je m'inscris.</p></a>
+        <a href="index.php"><p>Retour</p></a>
     </form>
     
     <script src="https://cdn.jsdelivr.net/npm/axentix@1.3.0/dist/js/axentix.min.js"></script>

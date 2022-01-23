@@ -35,6 +35,7 @@ require("actions/questions/editQuestionAction.php");
                 </div>
 
                 <button type="submit" class="btn btn-primary" name="validate">Modifier la question</button>
+                <a href="index.php"><p>Retour</p></a>
             </form>
         <?php
 

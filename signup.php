@@ -33,6 +33,7 @@
         <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
     <br><br>
         <a href="login.php"><p>j'ai déjà un compte, je me connecte</p></a>
+        <a href="index.php"><p>Retour</p></a>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/axentix@1.3.0/dist/js/axentix.min.js"></script>
     <style>

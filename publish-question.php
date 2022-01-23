@@ -32,6 +32,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary" name="validate">Publier la question</button>
+        <a href="index.php"><p>Retour</p></a>
    </form>
 </body>
 <style>
